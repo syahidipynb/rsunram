@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 
-$config['base_url'] = 'http://localhost/RSUNRAM/';
+$config['base_url'] = 'http://localhost:8888/rsunram/';
 
 
 $config['index_page'] = '';

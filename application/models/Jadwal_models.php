@@ -28,6 +28,7 @@ class Jadwal_models extends CI_Model{
     }
 
     function update_jadwal(){
+       
         $id=$this->input->post('id');
 		$Mulai=$this->input->post('Mulai');
 		$Selesai=$this->input->post('Selesai');

@@ -528,6 +528,7 @@
                     <label class="control-label col-md-3 col-sm-3 col-xs-12">Poliklinik</label>
                     <div class='input-group'>
                         <input type='text' name="Poliklinik_Edit" id="Poliklinik_Edit" class="form-control" readonly/>
+                        <input type='hidden' name="ID_Edit" id="ID_Edit" class="form-control" readonly/>
                     </div>
                 </div>
 
@@ -1019,10 +1020,9 @@
 
         //update record to database
         $('#edit_save').on('click',function(){
-            var id = $('#ID_Edit').val()
+            var id = $('#ID_Edit').val();
             var Mulai = $('#Mulai_Edit').val();
             var Selesai = $('#Selesai_Edit').val();
-            
             $.ajax({
                 type : "POST",
                 url  : "<?php echo site_url('jadwal_controllers/update')?>",
